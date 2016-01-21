@@ -1,0 +1,141 @@
+body {
+	font-family: arial;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.clear::after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+/********************************** BASE STYLES **********************************/
+.thumb > img {
+	max-width: 100%;
+	border: 10px solid white;
+	border-radius: 100%;
+}
+
+.row {
+	text-align: center;
+}
+
+.aboveImg, .botImg {
+	width: 100%;
+}
+
+.aboveImg {
+	margin-bottom: -3px;
+}
+
+.botImg {
+	margin-top: 0px;
+}
+
+/********************************** TYPEOGRAPHY **********************************/
+h1 {
+	color: #3FA9F5;
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: #ccc;
+	margin-bottom: 50px;
+}
+
+h3 {
+	padding-top: 50px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+h3 + p {
+	margin-bottom: 50px;
+	letter-spacing: 3px;
+}
+
+h4 {
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+h4 + p {
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+.blue h3, .blue h3 + p, h1, h2, .orange h3, .orange h3 + p {
+	text-align: center;
+}
+
+
+/********************************** BLUE SECTIONS **********************************/
+h3, h3 + p, h4, h4 + p{
+	color: white;
+}
+
+.blue {
+	background: #3FA9F5;
+}
+
+
+.blue h3 + p {
+	color: #007BC6;
+}
+
+.orange {
+	background: #FF931E;
+}
+
+.orange h3 + p {
+	color: #E57200;
+}
+
+.white {
+	background: white;
+}
+
+.white img {
+	border-color: #ccc;
+}
+
+.white h3, .white h4, .white h4 + p {
+	color: #ddd;
+}
+
+.white h3 + p {
+	color: #999;
+}
+
+.grey {
+	color: white;
+	background: #ccc;
+}
+
+@media (min-width: 700px) {
+	.thumb {
+		float: left;
+		width: 50%;
+		padding: 0 5%;
+	}
+}
+
+@media (min-width: 900px) {
+	.thumb {
+		float: left;
+		width: 25%;
+		padding: 0 2.5%;
+	}
+}
